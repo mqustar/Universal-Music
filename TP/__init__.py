@@ -1,3 +1,6 @@
+#The main file, __init__.py
+# This file runs the whole game by calling playGame
+
 from direct.showbase.ShowBase import ShowBase
 base = ShowBase()
 from direct.gui.DirectGui import *
@@ -147,7 +150,7 @@ class World(DirectObject.DirectObject):
     win_s = 512          # fft size
     hop_s = win_s //  2     # hop size
     # parse command line arguments
-    filename = 'test3.mp3'
+    filename = 'songs/test3.mp3'
     samplerate = 0
     if len( sys.argv ) > 2: samplerate = int(sys.argv[2])
     # create aubio source
