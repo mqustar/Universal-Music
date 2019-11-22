@@ -37,6 +37,7 @@ class World(DirectObject.DirectObject):
         self.accept("wheel_up", self.zoomOut)
         self.accept("wheel_down", self.zoomIn)
         World.playSong(self)
+        
 
     deimos = ["models/deimos_1k_tex.jpg", "models/Dgreen.jpg", "models/Dblue.jpg","models/Dpurple.jpg", "models/Dyellow.jpg"]
     cool = ["models/cool.jpg", "models/cred.jpg", "models/cgreen.jpg", "models/cpurple.jpg", "models/cblue.jpg"]
